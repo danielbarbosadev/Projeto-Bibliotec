@@ -13,12 +13,12 @@
     color: #fff;
     text-transform: uppercase;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
     margin-left: 50px;
 }
 
-.banner-bem-vindo
+.banner-principal
 {
     background-image: url(/imgs/banner-principal-home.png);
     background-size: cover;
@@ -30,13 +30,13 @@
     justify-content: space-between;
 }
 
-.banner-bem-vindo img
+.banner-principal img
 {
     align-self: flex-end;
     width: 35%;
 }
 
-.txt-banner
+.txt-banner-principal
 {
     
     height: 100%;
@@ -47,7 +47,7 @@
     align-items: flex-start;
 }
 
-.txt-banner p
+.txt-banner-principal p
 {
     font-size: 1.5em;
     width: 50%;
@@ -70,15 +70,17 @@
     background-color: #29b9b0;
 }
 
-.sessao-motivos-usar-bibliotec
+.sessao-cards
 {
     display: flex; 
     flex-direction: column;
     align-items: center;
 }
 
-.sessao-motivos-usar-bibliotec h2
+.sessao-cards h2
 {
+    margin-top: 50px;
+    margin-bottom: 20px;
     font-size: 30px;
     font-weight: 700;
 }
@@ -90,4 +92,91 @@
     border-style: none;
     width: 300px;
     border-radius: 5px;
+}
+
+.cards-home
+{
+    display: flex;
+    gap: 125px;
+    margin-top: 170px;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle-icon
+{
+    display: flex;
+    border: 5px solid var(--cor-destaque);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -75px;
+    background-color: #fff;
+}
+
+.txt-card
+{
+    border: 1px solid black;
+    border-radius: var(--border-cards);
+    width: 270px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.txt-card h3
+{
+    text-transform: uppercase;
+    text-align: center;
+    width: 10em;
+}
+
+.txt-card p
+{
+    width: 12em;
+    text-align: center;
+}
+
+.banner-secundario
+{
+    margin-top: 100px;
+    background-color: #4891DC;
+    color: #fff;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    color: #fff;
+    padding: 0px 120px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.txt-banner-secundario
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.txt-banner-secundario p
+{
+    font-size: 1.5em;
+    width: 60%;
 }
