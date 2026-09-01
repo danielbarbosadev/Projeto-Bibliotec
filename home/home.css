@@ -153,7 +153,7 @@
 .banner-secundario
 {
     margin-top: 100px;
-    background-color: #4891DC;
+    background-image: url(/imgs/Banner\ centro.svg);
     color: #fff;
     background-size: cover;
     height: 50vh;
@@ -161,8 +161,7 @@
     color: #fff;
     padding: 0px 120px;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .txt-banner-secundario
@@ -173,6 +172,11 @@
     justify-content: center;
     gap: 50px;
     align-items: flex-start;
+}
+
+.txt-banner-secundario h2
+{
+    font-size: 1.8em;
 }
 
 .txt-banner-secundario p
