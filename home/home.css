@@ -50,7 +50,7 @@
 .txt-banner-principal p
 {
     font-size: 1.5em;
-    width: 50%;
+    width: 60%;
 }
 
 .btn-acessar
@@ -70,17 +70,26 @@
     background-color: #29b9b0;
 }
 
-.sessao-cards
+.sessao-beneficios
 {
     display: flex; 
     flex-direction: column;
     align-items: center;
 }
 
-.sessao-cards h2
+.title
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
     margin-top: 50px;
     margin-bottom: 20px;
+}
+
+.title-beneficios h2
+{
+    
     font-size: 30px;
     font-weight: 700;
 }
@@ -94,11 +103,13 @@
     border-radius: 5px;
 }
 
-.cards-home
+.cards-beneficios
 {
-    display: flex;
-    gap: 125px;
-    margin-top: 170px;
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    gap: 30%;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 .card
@@ -113,15 +124,17 @@
 .circle-icon
 {
     display: flex;
-    border: 5px solid var(--cor-destaque);
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: -75px;
+
     background-color: #fff;
+    border: 5px solid var(--cor-destaque);
+
+    position: absolute;
+    border-radius: 50%;
+    width: 80%;
+    height: 40%;
+    top: -25%;
 }
 
 .txt-card
@@ -135,6 +148,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.123);
 }
 
 .txt-card h3
@@ -152,13 +166,12 @@
 
 .banner-secundario
 {
-    margin-top: 100px;
+    height: 60vh;
     background-image: url(/imgs/Banner\ centro.svg);
-    color: #fff;
     background-size: cover;
-    height: 50vh;
-    width: 100%;
+    margin-top: 100px;
     color: #fff;
+    width: 100%;
     padding: 0px 120px;
     display: flex;
     justify-content: flex-end;
@@ -183,4 +196,59 @@
 {
     font-size: 1.5em;
     width: 60%;
+}
+
+.sessao-recomendados
+{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.livros-recomendados
+{
+    display: flex;
+    margin: 100px;
+    gap: 50px;
+}
+
+.livro
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.livro img
+{   
+    width: 200px;
+    height: 300px;
+}
+
+.livro h3
+{
+    text-transform: uppercase;
+    text-align: center;
+    width: 80%;
+}
+
+.rodape-home
+{
+    height: 30vh;
+    background-color: var(--azul-escuro);
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+}
+
+.rodape-home h4
+{
+    color: var(--cor-destaque);
+    font-weight: 600;
+}
+
+.rodape-home p
+{
+    color: #fff;
+    font-weight: 200;
 }
