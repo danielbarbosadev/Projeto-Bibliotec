@@ -1,0 +1,132 @@
+.cabecalho-login
+{
+    background-color: var(--azul-escuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0px 120px;
+}
+
+.cabecalho-login a
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.main-login
+{
+    background-image: url(/imgs/banner-login.png);
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-login
+{
+    background-color: #E9F0EF;
+    padding: 50px 100px;
+    border-radius: var(--border-cards);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-login
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.title-login img
+{
+    margin-bottom: 30px;
+    height: 70px;
+}
+
+.title-login p
+{
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+.section-info-login
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-bottom: 30px;
+}
+
+.input label
+{
+    color: var(--texto);
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.input input
+{
+    width: 530px;
+    height: 60px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.3em;
+    font-style: italic;
+    
+}
+
+.btn-login
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 530px;
+    height: 60px;
+    font-size: 1.4em;
+    border-radius: var(--border-btn);
+    
+}
+
+.btn-entrar
+{
+    background-color: var(--azul-escuro);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    
+}
+
+.btn-entrar-google
+{
+   background-color: #ffffff;
+   box-shadow: 0px 4px rgba(0, 0, 0, 0.123);
+}
+
+.btn-entrar-google a
+{
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: 500;
+}
