@@ -17,3 +17,8 @@ padding: 0px;
     --border-cards: 15px;
     --border-btn: 10px;
 }
+
+html
+{
+    scroll-behavior: smooth;
+}
