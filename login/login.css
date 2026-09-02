@@ -114,14 +114,29 @@
     text-decoration: none;
     margin-top: 30px;
     margin-bottom: 30px;
+    transition: 0.2s;
+}
 
-    
+.btn-entrar:hover
+{
+    transform: scale(1.025);
+    transition: 0.2s;
 }
 
 .btn-entrar-google
 {
-   background-color: #ffffff;
-   box-shadow: 0px 4px rgba(0, 0, 0, 0.123);
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.123);
+    gap: 15px;
+    transition: 0.2s;
+}
+
+.btn-entrar-google:hover
+{
+    transform: scale(1.025);
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .btn-entrar-google a
@@ -129,4 +144,10 @@
     text-decoration: none;
     color: var(--texto);
     font-weight: 500;
+}
+
+#password 
+{
+    padding-top: 10px;
+    padding-left: 10px;
 }
