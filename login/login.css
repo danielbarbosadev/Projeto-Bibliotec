@@ -24,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 90vh;
 }
 
 .section-login
@@ -35,7 +36,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 90px;
 }
 
 .title-login
