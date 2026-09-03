@@ -239,63 +239,55 @@
 {
     background-color: var(--azul-escuro);
     padding: 100px 120px;
-}
-
-.section-information
-{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    row-gap: 50px;
-    margin-bottom: 60px;
-}
-
-.section-information h4
-{
-    color: var(--cor-destaque);
-    margin: 13px 0px;
-}
-
-.section-information, .legal
-{
+    display: flex;
+    flex-direction: column;
     color: #fff;
 }
 
-.info h4 
+.rodape-home h4
 {
-    margin-bottom: 20px;
+    color: var(--cor-destaque);
 }
 
-.info p 
+.section-library
 {
-    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.info-library
+{
+    display: flex;
+    gap: 200px;
+}
+
+.section-sociais
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .redes-sociais
 {
     display: flex;
-    width: 100px;
-}
-
-.icons-sociais
-{
-    display: flex;
-    gap: 40px;
-}
-
-.icons-sociais img
-{
-    width: 35px;
+    align-items: center;
+    gap: 184px;
 }
 
 .legal
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
-.legal span
+.info-terms
 {
     display: flex;
-    gap: 50px;
+    gap: 25px;
 }
+
+
