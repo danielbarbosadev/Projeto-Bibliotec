@@ -93,6 +93,13 @@
     
 }
 
+#password
+{
+    background-image: url(/imgs/icone-olho.svg);
+    background-repeat: no-repeat;
+    background-position: 480px;
+}
+
 .btn-login
 {
     display: flex;
