@@ -217,7 +217,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .livro img
@@ -231,24 +231,70 @@
     text-transform: uppercase;
     text-align: center;
     width: 80%;
+    height: 90%;
 }
 
 .rodape-home
 {
-    height: 30vh;
     background-color: var(--azul-escuro);
-    display: grid;
-    grid-template-columns: 2fr 1fr auto;
+    padding: 100px 120px;
 }
 
-.rodape-home h4
+.section-information
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    row-gap: 50px;
+    margin-bottom: 60px;
+}
+
+.section-information h4
 {
     color: var(--cor-destaque);
-    font-weight: 600;
+    margin: 13px 0px;
 }
 
-.rodape-home p
+.section-information, .legal
 {
     color: #fff;
-    font-weight: 200;
+}
+
+.info h4 
+{
+    margin-bottom: 20px;
+}
+
+.info p 
+{
+    margin-bottom: 15px;
+}
+
+.redes-sociais
+{
+    display: flex;
+    width: 100px;
+}
+
+.icons-sociais
+{
+    display: flex;
+    gap: 40px;
+}
+
+.icons-sociais img
+{
+    width: 35px;
+}
+
+.legal
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.legal span
+{
+    display: flex;
+    gap: 50px;
 }
