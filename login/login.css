@@ -93,6 +93,11 @@
     position: absolute;
 }
 
+.btn-olho
+{
+    cursor: pointer;
+}
+
 .buttons
 {
     display: flex;
