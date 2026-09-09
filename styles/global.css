@@ -95,6 +95,8 @@ html
 
     align-self: flex-end;
     cursor: pointer;
+
+    color: #fff;
 }
 
 /* LOGO */
@@ -131,6 +133,9 @@ html
     text-transform: uppercase;
     font-size: 0.9em;
     font-weight: 700;
+
+    padding-bottom: 10px;
+    border-bottom: 4px solid transparent;
 }
 
 .item-menu i 
@@ -142,8 +147,9 @@ html
 .item-menu:hover 
 {
     color: var(--cor-destaque);
-    padding-bottom: 10px;
+    /* padding-bottom: 5px; */
     border-bottom: 4px solid var(--cor-destaque);
+    transition: 0.3s;
 }
 
 /* ITEM ATIVO */
