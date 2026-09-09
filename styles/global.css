@@ -108,11 +108,17 @@ html
 
 /* NAVEGAÇÃO */
 
-.navegacao 
+.navegacao-lateral
 {
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+.navegacao-lateral a
+{
+    color: #fff;
+    text-decoration: none;
 }
 
 .item-menu 
