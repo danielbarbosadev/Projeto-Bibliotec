@@ -203,7 +203,6 @@
 
 .livro img
 {   
-    /* width: 200px */
     height: 300px;
 }
 
@@ -215,7 +214,9 @@
     height: 90%;
 }
 
-.rodape-home
+/* RODAPÉ */
+
+.rodape
 {
     background-color: var(--azul-escuro);
     padding: 100px 120px;
@@ -224,50 +225,74 @@
     color: #fff;
 }
 
-.rodape-home h4
+.rodape h4
 {
     color: var(--cor-destaque);
 }
 
-.section-library
+.rodape a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+.infos-superior
 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 50px;
 }
 
-.info-library
+.logos
 {
     display: flex;
-    gap: 200px;
+    flex-direction: column;
+    gap: 130px;
 }
 
-.section-sociais
+.infos-rodape
 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-
-.redes-sociais
-{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 150px;
     align-items: center;
-    gap: 184px;
 }
 
-.legal
+.info
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 60px;
+}
+
+.icones-sociais
+{
+    display: flex;
+    gap: 30px;
+}
+
+.icones-sociais img
+{
+    width: 18%;
+}
+
+hr
+{
+    margin: 50px 0 40px 0;
+    color: #fff;
+}
+
+.info-legal
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
 }
 
-.info-terms
+.info-termos
 {
     display: flex;
-    gap: 25px;
+    gap: 50px;
 }
+
 
 
