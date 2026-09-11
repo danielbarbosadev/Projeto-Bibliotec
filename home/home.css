@@ -50,98 +50,102 @@
     background-color: #29b9b0;
 }
 
-.sessao-beneficios
-{
-    display: flex; 
+.titulo-secao {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.title
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: 50px;
+.titulo-secao h2 {
+    font-size: 1.5em;
     margin-bottom: 20px;
 }
 
-.title-beneficios h2
-{
-    
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.line
-{
+.titulo-secao span {
+    display: flex;
+    width: 250px;
+    height: 4px;
     background-color: var(--cor-destaque);
-    height: 5px;
-    border-style: none;
-    width: 300px;
-    border-radius: 5px;
 }
 
-.cards-beneficios
-{
-    display: grid;
-    grid-template-columns: repeat(3, 20%);
-    gap: 30%;
-    justify-content: center;
-    margin-top: 100px;
-}
+/* Seção Benefícios */
 
-.card
-{
+.beneficios {
+    padding: 50px 120px;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
+    justify-content: space-between;
+
+    gap: 100px;
+}
+
+.beneficios-lista {
+    display: grid;
+
+    grid-template-columns: repeat(3, 20%);
+
+    gap: 10%;
+
+    justify-content: center;
+}
+
+.beneficio {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 20px 50px; 
+
+    border: 1px solid var(--azul-escuro);
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.25); 
+
+    text-align: center;
+
     position: relative;
 }
 
-.circle-icon
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.beneficio-icone img {
+    width: 50%;
+}
 
+.beneficio-icone {
+    border: 4px solid var(--cor-destaque);
     background-color: #fff;
-    border: 5px solid var(--cor-destaque);
+
+    border-radius: 50%;
+
+    width: 30%;
+    height: 30%;
 
     position: absolute;
-    border-radius: 50%;
-    width: 80%;
-    height: 40%;
-    top: -25%;
+
+    top: -15%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: grid;
+
+    place-items: center;
 }
 
-.txt-card
-{
-    border: 1px solid black;
-    border-radius: var(--border-cards);
-    width: 270px;
-    height: 330px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.123);
-}
-
-.txt-card h3
-{
+.beneficio h3 {
+    font-size: 1.2em;
+    margin-bottom: 30px;
     text-transform: uppercase;
-    text-align: center;
-    width: 10em;
+    width: 90%;
 }
 
-.txt-card p
-{
-    width: 12em;
-    text-align: center;
+.beneficio p {
+    font-size: 1em;
+    width: 80%;
 }
 
 .banner-secundario
@@ -294,5 +298,123 @@ hr
     gap: 50px;
 }
 
+/* RESPONSIVIDADE */
+.btn-menu {
+    display: none; 
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-menu i {
+    font-size: 2em;
+
+    color: #fff;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px)
+{
+    html
+    {
+        font-size: 12px;
+    }
+
+    .cabecalho img
+    {
+        width: 20%;
+    }
+
+    .txt-banner-principal h1
+    {
+        text-align: center;
+    }
+
+    /* BENEFICIOS */
+
+    .beneficios {
+        gap: 50px;
+
+        padding: 30px 0;
+
+        overflow: hidden;
+    }
+
+    .beneficios-lista {
+        grid-template-columns: repeat(3, 30%);
+
+        overflow-x: scroll; /*permite que o objeto role para o lado*/
+
+        padding: 50px 20px;
+
+        justify-content: flex-start;
+
+    }
+
+    .beneficios-lista::-webkit-scrollbar {
+        display: none;
+    }
+
+    .beneficio {
+        padding: 80px 10px 50px;
+    }
+
+    .beneficio h3 {
+        margin-bottom: 25px;
+        width: 60%;
+    }
+
+    .beneficio p {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) 
+{
+
+    .cabecalho {
+        padding: 0 40px;
+
+        position: relative;
+    }
+
+    .btn-menu {
+        
+        display: flex;
+    }
+
+    .navegacao {
+
+        background-color: var(--azul-escuro);
+
+        position: absolute;
+        /* distancia de 10vh do topo */
+        top: 10vh;
+
+        /* encosta na esquerda */
+        left: 0;
+
+        width: 100%;
+        height: auto;
+
+        padding: 40px;
+
+        border-radius: 0 0 0 30px;
+
+        flex-direction: column;
+        align-items: flex-end;
+
+        gap: 20px;
+
+        
+        z-index: 100;
+
+        display: none;
+    }
+
+    .navegacao.ativo {
+        display: flex;
+    }
+}
 
 
