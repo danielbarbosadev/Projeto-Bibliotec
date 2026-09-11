@@ -136,7 +136,7 @@
 
 .livro p:nth-child(1)
 {
-    justify-content: flex-start;
+    justify-self: flex-start;
 }
 
 input[type="checkbox"]
