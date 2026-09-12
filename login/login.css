@@ -1,6 +1,12 @@
+.btn-home
+{
+    display: none;
+    color: var(--branco);
+}
+
 .main-login
 {
-    background-image: url(/imgs/banner-login.png);
+    background-image: url(../imgs/banner-login.png);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -17,6 +23,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 600px;
+    height: 600px;
 }
 
 .title-login
@@ -24,19 +32,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 .title-login img
 {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     height: 70px;
+}
+
+.title-login h1
+{
+    font-size: 1.6em;
 }
 
 .title-login p
 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-top: 10px;
+}
+
+.info-login
+{
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -45,9 +64,6 @@
     display: flex;
     flex-direction: column;
     gap: 1px;
-    margin-bottom: 30px;
-    
-    
 }
 
 .campo input
@@ -91,10 +107,6 @@
     transform: translateY(-50%);
     background-color: transparent;
     position: absolute;
-}
-
-.btn-olho
-{
     cursor: pointer;
 }
 
@@ -155,4 +167,272 @@
     transform: scale(1.025);
     transition: 200ms;
     cursor: pointer;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 1024px)
+{
+    
+
+   .cabecalho img
+   {
+        width: 20%;
+        
+   }
+
+   .cabecalho nav
+   {
+        display: flex;
+   }
+
+   .main-login
+   {
+     height: 95vh;
+   }
+
+   .btn-home
+   {
+        display: none;
+   }
+
+   .section-login
+   {
+        width: 550px;
+        height:600px;
+        gap: 20px;
+        padding: 200px;
+   }
+
+   .title-login
+   {
+       width: 500px;
+       margin-bottom: 10%;
+   }
+
+   .title-login h1
+   {
+       font-size: 1.4em;
+   }
+
+   .title-login p
+   {
+       font-size: 1em;
+   }
+
+   .title-login img
+   {
+       height: 50%; 
+       margin-bottom: 10px;
+   }
+
+   .info-login
+   {
+        gap: 35px;
+   }
+
+   .campo
+   {
+        margin-bottom: 0;
+   }
+
+   .campo label
+   {
+        font-size: 1em;
+   }
+
+   .campo input, .btn-entrar, .btn-entrar-google
+    {   
+        width: 450px;
+        height: 45px;
+        border: none;
+    }  
+
+    .btn-olho
+    {
+       right: 10px; 
+    }
+    
+    .buttons
+    {
+        margin-top: 0;
+    }
+}
+@media (max-width: 768px)
+{
+   
+
+   .cabecalho img
+   {
+        width: 20%;
+        
+   }
+
+   .cabecalho nav
+   {
+        display: none;
+   }
+
+   .main-login
+   {
+     height: 90vh;
+   }
+
+   .btn-home
+   {
+        display: flex;
+   }
+
+   .section-login
+   {
+        width: 70%;
+        height: 600px;
+        gap: 20px;
+        padding: 200px;
+   }
+
+   .title-login
+   {
+       width: 500px;
+       margin-bottom: 10%;
+   }
+
+   .title-login h1
+   {
+       font-size: 1.4em;
+   }
+
+   .title-login p
+   {
+       font-size: 1em;
+   }
+
+   .title-login img
+   {
+       height: 50%; 
+       margin-bottom: 10px;
+   }
+
+   .info-login
+   {
+        gap: 35px;
+   }
+
+   .campo
+   {
+        margin-bottom: 0;
+   }
+
+   .campo label
+   {
+        font-size: 1em;
+   }
+
+   .campo input, .btn-entrar, .btn-entrar-google
+    {   
+        width: 450px;
+        height: 45px;
+        border: none;
+    }  
+
+    .btn-olho
+    {
+       right: 10px; 
+    }
+    
+    .buttons
+    {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 680px)
+{
+   .cabecalho  
+   {
+        padding: 0px 30px;
+        height: 10vh;
+   }
+
+   .cabecalho img
+   {
+        width: 23%;
+        
+   }
+
+   .cabecalho nav
+   {
+        display: none;
+   }
+
+   .main-login
+   {
+     height: 90vh;
+   }
+
+   .btn-home
+   {
+        display: flex;
+   }
+
+   .section-login
+   {
+        width: 80%;
+        height: 600px;
+        gap: 20px;
+        padding: 200px;
+   }
+
+   .title-login
+   {
+       width: 500px;
+       margin-bottom: 10%;
+   }
+
+   .title-login h1
+   {
+       font-size: 1.3em;
+   }
+
+   .title-login p
+   {
+       font-size: 1em;
+   }
+
+   .title-login img
+   {
+       height: 50%; 
+       margin-bottom: 10px;
+   }
+
+   .info-login
+   {
+        gap: 35px;
+   }
+
+   .campo
+   {
+        margin-bottom: 0;
+   }
+
+   .campo label
+   {
+        font-size: 1em;
+   }
+
+   .campo input, .btn-entrar, .btn-entrar-google
+    {   
+        width: 350px;
+        height: 45px;
+        border: none;
+    }  
+
+    .btn-olho
+    {
+       right: 10px; 
+    }
+    
+    .buttons
+    {
+        margin-top: 0;
+    }
 }
