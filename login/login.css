@@ -1,108 +1,133 @@
-.btn-home
+.cabecalho
+{
+    padding: 0 40px;
+}
+
+.cabecalho img
+{
+    width: 110px;
+}
+
+.cabecalho nav
 {
     display: none;
+}
+
+.cabecalho .btn-home
+{
     color: var(--branco);
 }
 
+
+/* Fundo da página */
 .main-login
 {
     background-image: url(../imgs/banner-login.png);
     background-size: cover;
+
+    min-height: 90vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
 }
 
-.section-login
+.conteudo
 {
-    background-color: #E9F0EF;
-    padding: 50px 100px;
-    border-radius: var(--border-cards);
+    background-color:var(--fundos);
+
+    width: 80%;
+
+    display: grid;
+    gap: 20px;
+
+    padding: 30px;
+
+    border-radius: 15px;
+}
+
+.titulo-login
+{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 600px;
+    gap: 10px;
 }
 
-.title-login
+.txt-titulo
 {
     display: flex;
     flex-direction: column;
+    gap: 5px;
     align-items: center;
-    margin-bottom: 20px;
+    text-align: center;
 }
 
-.title-login img
+.txt-titulo h1
 {
-    margin-bottom: 15px;
-    height: 70px;
+    font-size: 16px;
 }
 
-.title-login h1
+.txt-titulo p
 {
-    font-size: 1.6em;
-}
-
-.title-login p
-{
-    font-size: 1.2em;
-    margin-top: 10px;
+    font-size: 14px;
+    width: 70%;
 }
 
 .info-login
 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 30px;
 }
 
+.inputs
+{
+    display: grid;
+    gap: 20px;
+}
 
 .campo
 {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
+    display: grid;
+    gap: 5px;
 }
 
 .campo input
 {
-    border-radius: var(--border-btn);
-    outline: none;
+    width: 100%;
+    height: 35px;
+
+    border: none;
+    border-radius: 10px;
+
     padding-left: 10px;
+
+    outline: none;
 }
 
 .campo label
 {
-    color: var(--texto);
-    font-weight: 700;
-    font-size: 1.3em;
-    margin-bottom: 10px;
+    color: var(--azul-escuro);
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.campo input::placeholder
-{    
-    font-size: 1.1em;
+#email::placeholder
+{
+    color: rgba(0, 0, 0, 0.404);
     font-style: italic;
+    font-size: 10px;
 }
 
-.campo input, .btn-entrar, .btn-entrar-google
+.campo-senha
 {
-    width: 500px;
-    height: 60px;
-    border: none;
-}
-
-.campo-senha 
-{
-   position: relative;
+    position: relative;
 }
 
 .btn-olho
 {
     border: none;
-    right: 20px;
+    right: 5px;
     top: 50%;
     transform: translateY(-50%);
     background-color: transparent;
@@ -110,43 +135,63 @@
     cursor: pointer;
 }
 
-.buttons
+.btn-olho img
 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 40px;
+    width: 70%;
+}
+
+.botoes
+{
+    display: grid;
+    gap: 15px;
+}
+
+.botao
+{
+    height: 40px;
+    border-radius: 10px;
+    border: none;
 }
 
 .btn-entrar
 {
-    
     background-color: var(--azul-escuro);
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 600;
+
+    color: var(--branco);
+    text-transform: uppercase;
+    font-weight: 700;
+
+    transition: 0.1s;
 }
 
 .btn-entrar:hover
 {
-    background-color: #344653;
+    background-color: #354857;
+    cursor: pointer;
+    transform: scale(1.025);
 }
 
 .btn-entrar-google
 {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 
-    background-color: #fff;
-    font-size: 1.2em;
+    background-color: var(--branco);
+
+    color: var(--azul-escuro);
     font-weight: 500;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition: 0.1s;
 }
 
-.btn-entrar-google:hover    
+.btn-entrar-google:hover
 {
-    background-color: #fcfcfc;
+    cursor: pointer;
+    transform: scale(1.025);  
 }
 
 .btn-entrar-google img
@@ -154,285 +199,170 @@
     height: 50%;
 }
 
-.btn-entrar, .btn-entrar-google
+@media (min-width: 768px)
 {
-    border-radius: var(--border-btn);
-    width: 100%;
-    height: 50px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.164);
+    .conteudo
+    {
+        width: 60%;
+    }
+
+    .txt-titulo h1
+    {
+        font-size: 20px;
+    }
 }
 
-.btn-entrar:hover, .btn-entrar-google:hover
+@media (min-width: 1024px)
 {
-    transform: scale(1.025);
-    transition: 200ms;
-    cursor: pointer;
-}
+    .cabecalho
+    {
+        padding: 0 120px;
+    }
 
-/* MEDIA QUERY */
-@media (max-width: 1024px)
-{
-    
+    .cabecalho img
+    {
+        width: auto;
+    }
 
-   .cabecalho img
-   {
-        width: 20%;
-        
-   }
-
-   .cabecalho nav
-   {
+    .cabecalho nav
+    {
         display: flex;
-   }
+    }
 
-   .main-login
-   {
-     height: 95vh;
-   }
-
-   .btn-home
-   {
+    .cabecalho .btn-home
+    {
         display: none;
-   }
+    }
 
-   .section-login
-   {
-        width: 550px;
-        height:600px;
-        gap: 20px;
-        padding: 200px;
-   }
+    .conteudo
+    {
+        padding: 50px 70px;
+        width: 60%;
+    }
 
-   .title-login
-   {
-       width: 500px;
-       margin-bottom: 10%;
-   }
+    .titulo-login
+    {
+        margin-bottom: 30px;
+        gap: 30px;
+    }
 
-   .title-login h1
-   {
-       font-size: 1.4em;
-   }
+    .titulo-login img
+    {
+        height: 60px;
+    }
 
-   .title-login p
-   {
-       font-size: 1em;
-   }
+    .titulo-login h1
+    {
+        font-size: 30px;
+    }
 
-   .title-login img
-   {
-       height: 50%; 
-       margin-bottom: 10px;
-   }
+    .titulo-login p
+    {
+        font-size: 22px;
+    }
 
-   .info-login
-   {
-        gap: 35px;
-   }
+    .inputs
+    {
+        margin-bottom: 30px;
+    }
 
-   .campo
-   {
-        margin-bottom: 0;
-   }
+    .campo input
+    {
+        height: 50px;
+    }
 
-   .campo label
-   {
-        font-size: 1em;
-   }
+    .campo label
+    {
+        font-size: 18px;
+    }
 
-   .campo input, .btn-entrar, .btn-entrar-google
-    {   
-        width: 450px;
-        height: 45px;
-        border: none;
-    }  
+    #email::placeholder
+    {
+        font-size: 15px;
+    }
 
     .btn-olho
     {
-       right: 10px; 
+        right: 10px;
     }
-    
-    .buttons
+
+    .btn-olho img
     {
-        margin-top: 0;
+        width: 100%;
     }
+
+    .botoes
+    {
+        gap: 30px;
+    }
+
+    .botao
+    {
+        height: 50px;
+    }
+
+    .btn-entrar,
+    .btn-entrar-google
+    {
+        font-size: 18px;
+    }
+
+    
 }
-@media (max-width: 768px)
+
+@media (min-width: 1440px)
 {
-   
+    .cabecalho
+    {
+        padding: 0 120px;
+    }
 
-   .cabecalho img
-   {
-        width: 20%;
-        
-   }
+    .conteudo
+    {
+        padding: 50px 100px;
+        width: 50%;
+    }
 
-   .cabecalho nav
-   {
-        display: none;
-   }
+    .campo input
+    {
+        height: 60px;
+    }
 
-   .main-login
-   {
-     height: 90vh;
-   }
+    .campo label
+    {
+        font-size: 20px;
+    }
 
-   .btn-home
-   {
-        display: flex;
-   }
-
-   .section-login
-   {
-        width: 70%;
-        height: 600px;
-        gap: 20px;
-        padding: 200px;
-   }
-
-   .title-login
-   {
-       width: 500px;
-       margin-bottom: 10%;
-   }
-
-   .title-login h1
-   {
-       font-size: 1.4em;
-   }
-
-   .title-login p
-   {
-       font-size: 1em;
-   }
-
-   .title-login img
-   {
-       height: 50%; 
-       margin-bottom: 10px;
-   }
-
-   .info-login
-   {
-        gap: 35px;
-   }
-
-   .campo
-   {
-        margin-bottom: 0;
-   }
-
-   .campo label
-   {
-        font-size: 1em;
-   }
-
-   .campo input, .btn-entrar, .btn-entrar-google
-    {   
-        width: 450px;
-        height: 45px;
-        border: none;
-    }  
+    #email::placeholder
+    {
+        font-size: 18px;
+    }
 
     .btn-olho
     {
-       right: 10px; 
+        right: 15px;
     }
+
+    .btn-olho img
+    {
+        width: 35px;
+    }
+
+    .botoes
+    {
+        gap: 30px;
+    }
+
+    .botao
+    {
+        height: 60px;
+    }
+
+    .btn-entrar,
+    .btn-entrar-google
+    {
+        font-size: 20px;
+    }
+
     
-    .buttons
-    {
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 680px)
-{
-   .cabecalho  
-   {
-        padding: 0px 30px;
-        height: 10vh;
-   }
-
-   .cabecalho img
-   {
-        width: 23%;
-        
-   }
-
-   .cabecalho nav
-   {
-        display: none;
-   }
-
-   .main-login
-   {
-     height: 90vh;
-   }
-
-   .btn-home
-   {
-        display: flex;
-   }
-
-   .section-login
-   {
-        width: 80%;
-        height: 600px;
-        gap: 20px;
-        padding: 200px;
-   }
-
-   .title-login
-   {
-       width: 500px;
-       margin-bottom: 10%;
-   }
-
-   .title-login h1
-   {
-       font-size: 1.3em;
-   }
-
-   .title-login p
-   {
-       font-size: 1em;
-   }
-
-   .title-login img
-   {
-       height: 50%; 
-       margin-bottom: 10px;
-   }
-
-   .info-login
-   {
-        gap: 35px;
-   }
-
-   .campo
-   {
-        margin-bottom: 0;
-   }
-
-   .campo label
-   {
-        font-size: 1em;
-   }
-
-   .campo input, .btn-entrar, .btn-entrar-google
-    {   
-        width: 350px;
-        height: 45px;
-        border: none;
-    }  
-
-    .btn-olho
-    {
-       right: 10px; 
-    }
-    
-    .buttons
-    {
-        margin-top: 0;
-    }
 }
