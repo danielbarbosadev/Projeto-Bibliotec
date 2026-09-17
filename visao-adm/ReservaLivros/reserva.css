@@ -174,14 +174,14 @@ input[type="checkbox"]:checked::after
     font-weight: 800;
 }
 
-.aguardando
+.status
 {
     color: #D65714;
 }
 
 .retirado
 {
-    color: #00F908;
+    color: #01b807;
 }
 
 /* RODAPÉ LISTA*/
